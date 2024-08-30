@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href=""> <!--Still need to find a png-->>
+    <!--<link rel="icon" type="image/x-icon" href=""> <till need to find a png-->
 </head>
 <body>
-    <h1>Hi</h1>
+    <div class="container">
+        <h1><span class="auto-type"></span></h1> 
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Hi", "Konichiwa", "Bienvenue", "Ohayo"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
     <h3>It seems as if you've found the link :3</h3>
-    <p>Download the <a href="" download>image</a> below and try finding the data hidden within it.</p>
+    <p>Download the <a href="qr.png" download>image</a> below and find the hidden flag.</p>
 </body>
 </html>
